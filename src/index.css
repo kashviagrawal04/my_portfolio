@@ -336,17 +336,21 @@ body {
         }
 
         .content {
-            @apply flex-1 p-8 bg-white max-w-2xl relative;
+            @apply flex-1 p-8 bg-white max-w-2xl relative overflow-y-auto;
+
+            ul {
+                @apply flex flex-wrap gap-6 content-start;
+            }
 
             li {
-                @apply absolute flex items-center flex-col gap-3;
+                @apply flex items-center flex-col gap-2 w-28 hover:bg-gray-100 p-2 rounded-lg cursor-pointer transition-colors;
 
                 img {
-                    @apply object-contain object-center size-16 relative group-hover:scale-105;
+                    @apply object-contain object-center size-14 relative group-hover:scale-105;
                 }
 
                 p {
-                    @apply text-sm text-center font-medium w-40;
+                    @apply text-[11px] leading-tight text-center font-medium w-full break-words;
                 }
             }
         }
