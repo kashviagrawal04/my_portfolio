@@ -14,11 +14,10 @@ const Safari = () => {
                 </div>
                 <div className="search flex-1 mx-auto max-w-xl flex items-center gap-3 bg-white border border-gray-300 rounded-lg px-3 py-1">
                     <Search size={16} className="text-gray-400" />
-                    <input 
-                        type="text" 
-                        placeholder="Search or enter website name"
-                        className="w-full outline-none text-sm bg-transparent"
-                        defaultValue="jsmastery.com/blog"
+                    <input
+                        type="text"
+                        className="w-full bg-transparent text-center text-sm font-medium outline-none"
+                        defaultValue="github.com/kashviagrawal04"
                         readOnly
                     />
                 </div>

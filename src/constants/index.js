@@ -77,52 +77,47 @@ const dockApps = [
 const blogPosts = [
     {
         id: 1,
-        date: "Sep 2, 2025",
-        title:
-            "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
+        date: "May 2026",
+        title: "Building PathSense: AI-Powered Pedestrian Risk Intelligence",
         image: "/images/blog1.png",
-        link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+        link: "https://github.com/kashviagrawal04/PathSense",
     },
     {
         id: 2,
-        date: "Aug 28, 2025",
-        title: "The Ultimate Guide to Mastering Three.js for 3D Development",
+        date: "Apr 2026",
+        title: "Food Allergen Detection using Vision Transformers (ViT)",
         image: "/images/blog2.png",
-        link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
+        link: "https://github.com/kashviagrawal04/Food-Allergen-Detector",
     },
     {
         id: 3,
-        date: "Aug 15, 2025",
-        title: "The Ultimate Guide to Mastering GSAP Animations",
+        date: "Mar 2026",
+        title: "Marvin: AI-Powered Women Safety App",
         image: "/images/blog3.png",
-        link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+        link: "https://github.com/kashviagrawal04/WOMEN-SAFETY-APP",
     },
 ];
 
 const techStack = [
     {
-        category: "Frontend",
-        items: ["React.js", "Next.js", "TypeScript"],
+        category: "Languages",
+        items: ["Python", "Java", "C++", "SQL"],
     },
     {
-        category: "Mobile",
-        items: ["React Native", "Expo"],
+        category: "AI & ML",
+        items: ["PyTorch", "Scikit-learn", "Hugging Face", "RAG"],
     },
     {
-        category: "Styling",
-        items: ["Tailwind CSS", "Sass", "CSS"],
+        category: "Frameworks",
+        items: ["FastAPI", "React", "LightGBM"],
     },
     {
-        category: "Backend",
-        items: ["Node.js", "Express", "NestJS", "Hono"],
+        category: "Databases",
+        items: ["MySQL", "PostgreSQL", "Redis", "ChromaDB"],
     },
     {
-        category: "Database",
-        items: ["MongoDB", "PostgreSQL"],
-    },
-    {
-        category: "Dev Tools",
-        items: ["Git", "GitHub", "Docker"],
+        category: "Cloud & DevOps",
+        items: ["AWS", "Docker", "Kubernetes", "Kafka"],
     },
 ];
 
@@ -132,28 +127,21 @@ const socials = [
         text: "Github",
         icon: "/icons/github.svg",
         bg: "#f4656b",
-        link: "https://github.com/JavaScript-Mastery-Pro",
+        link: "https://github.com/kashviagrawal04",
     },
     {
         id: 2,
-        text: "Platform",
-        icon: "/icons/atom.svg",
-        bg: "#4bcb63",
-        link: "https://jsmastery.com/",
-    },
-    {
-        id: 3,
-        text: "Twitter/X",
-        icon: "/icons/twitter.svg",
-        bg: "#ff866b",
-        link: "https://x.com/jsmasterypro",
-    },
-    {
-        id: 4,
         text: "LinkedIn",
         icon: "/icons/linkedin.svg",
         bg: "#05b6f6",
-        link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+        link: "https://www.linkedin.com/in/kashviagrawal0410/",
+    },
+    {
+        id: 3,
+        text: "Email",
+        icon: "/icons/twitter.svg",
+        bg: "#4bcb63",
+        link: "mailto:kashviagrawal4@gmail.com",
     },
 ];
 
@@ -477,10 +465,10 @@ const ABOUT_LOCATION = {
             subtitle: "Meet the Developer Behind the Code",
             image: "/images/kashvi-2.jpg",
             description: [
-                "Hey! I’m Kashvi 👋, a developer with a passion for Data Science, AI, and building impactful apps.",
-                "I specialize in Python, React, and Machine Learning.",
-                "I’m big on clean UI, smart algorithms, and creating solutions that make a real difference.",
-                "Outside of dev work, you'll find me exploring new technologies, attending concerts, or capturing moments!",
+                "Hey! I’m Kashvi Agrawal 👋, a B.Tech student in Computer Science & Engineering (Data Science) at VIT.",
+                "I specialize in Python, Machine Learning, and building AI-driven solutions that solve real-world problems.",
+                "My experience spans from backend development at Globe Teleservices to crafting ML pipelines at Magic Wand Labs.",
+                "I'm passionate about exploring Generative AI, RAG, and impactful tech. Feel free to explore my projects!",
             ],
         },
     ],
