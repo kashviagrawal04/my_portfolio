@@ -117,6 +117,31 @@ const Bear = () => {
                         </div>
                     </div>
                 );
+            case "coding":
+                return (
+                    <div className="prose max-w-none text-gray-800">
+                        <h1 className="text-3xl font-bold mb-6">Coding Profiles</h1>
+                        <div className="flex flex-col gap-4">
+                            <a href="https://www.hackerrank.com/profile/kashviagrawal4" target="_blank" rel="noreferrer" className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition text-gray-800 no-underline border border-gray-200">
+                                <Code2 size={24} className="text-green-600" />
+                                <div>
+                                    <p className="font-bold m-0 text-base">HackerRank</p>
+                                    <p className="text-sm text-gray-500 m-0">hackerrank.com/kashviagrawal4</p>
+                                </div>
+                                <ExternalLink size={16} className="ml-auto text-gray-400" />
+                            </a>
+
+                            <a href="https://leetcode.com/u/KASHVI4105/" target="_blank" rel="noreferrer" className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition text-gray-800 no-underline border border-gray-200">
+                                <Code2 size={24} className="text-yellow-600" />
+                                <div>
+                                    <p className="font-bold m-0 text-base">LeetCode</p>
+                                    <p className="text-sm text-gray-500 m-0">leetcode.com/KASHVI4105</p>
+                                </div>
+                                <ExternalLink size={16} className="ml-auto text-gray-400" />
+                            </a>
+                        </div>
+                    </div>
+                );
             default:
                 return null;
         }
@@ -164,6 +189,13 @@ const Bear = () => {
                             </svg>
                             <span className="font-medium">Links</span>
                         </li>
+                        <li 
+                            className={`px-4 py-2 flex items-center gap-3 cursor-default transition-colors ${activeTab === 'coding' ? 'bg-[#d84a44] text-white' : 'hover:bg-black/10'}`}
+                            onClick={() => setActiveTab('coding')}
+                        >
+                            <Code2 className="w-4 h-4" />
+                            <span className="font-medium">Coding</span>
+                        </li>
                     </ul>
                 </div>
 
@@ -207,6 +239,16 @@ const Bear = () => {
                                 <span className="font-bold text-sm text-gray-900">Links</span>
                             </div>
                             <p className="text-xs text-gray-500 ml-7 line-clamp-2">GitHub and LinkedIn handles and contact email...</p>
+                        </li>
+                        <li 
+                            className={`p-4 border-l-4 cursor-default transition-colors border-b border-gray-200 ${activeTab === 'coding' ? 'border-[#d84a44] bg-white' : 'border-transparent hover:bg-white'}`}
+                            onClick={() => setActiveTab('coding')}
+                        >
+                            <div className="flex gap-3 mb-1">
+                                <Code2 className="w-4 h-4 mt-0.5 text-gray-400 flex-shrink-0" />
+                                <span className="font-bold text-sm text-gray-900">Coding Profiles</span>
+                            </div>
+                            <p className="text-xs text-gray-500 ml-7 line-clamp-2">HackerRank, LeetCode...</p>
                         </li>
                     </ul>
                 </div>
