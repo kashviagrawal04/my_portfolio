@@ -543,15 +543,7 @@ const ABOUT_LOCATION = {
             position: "top-28 right-72",
             imageUrl: "/images/kashvi-1.jpg",
         },
-        {
-            id: 3,
-            name: "concert-me.png",
-            icon: "/images/image.png",
-            kind: "file",
-            fileType: "img",
-            position: "top-52 left-80",
-            imageUrl: "/images/kashvi-3.png",
-        },
+
         {
             id: 4,
             name: "about-me.txt",
