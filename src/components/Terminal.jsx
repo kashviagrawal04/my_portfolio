@@ -5,7 +5,12 @@ import { Terminal as TerminalIcon, Check } from "lucide-react";
 import HackerGame from "./HackerGame.jsx";
 
 const Terminal = () => {
-    const [history, setHistory] = useState([]);
+    const [history, setHistory] = useState([
+        {
+            command: "echo 'Welcome!'",
+            output: "Type 'help' to see all available commands, or try 'sudo hire kashvi' to skip the queue!"
+        }
+    ]);
     const [input, setInput] = useState("");
     const [isHacking, setIsHacking] = useState(false);
     const endRef = useRef(null);
