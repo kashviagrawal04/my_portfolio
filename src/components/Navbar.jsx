@@ -23,7 +23,7 @@ const Navbar = () => {
                     className={`p-1 px-2 rounded cursor-pointer transition-colors ${isAppleMenuOpen ? 'bg-blue-500 text-white' : 'hover:bg-gray-200'}`}
                     onClick={() => setIsAppleMenuOpen(!isAppleMenuOpen)}
                 >
-                    <img src="/images/apple-logo.png" alt="Apple" className="w-[28px] h-[28px] object-contain" />
+                    <img src="/images/apple-logo.png" alt="Apple" className="w-[40px] h-[40px] object-contain" />
                 </div>
                 {isAppleMenuOpen && <AppleMenu onClose={() => setIsAppleMenuOpen(false)} btnRef={appleBtnRef} />}
             </div>
@@ -34,7 +34,7 @@ const Navbar = () => {
                     <li key={id}>
                         <img
                             src={img}
-                            className="icon-hover cursor-pointer w-[28px] h-[28px] object-contain"
+                            className="icon-hover cursor-pointer w-[40px] h-[40px] object-contain"
                             alt={`icon-${id}`}
                             onClick={() => {
                                 if (img.includes('search')) {
