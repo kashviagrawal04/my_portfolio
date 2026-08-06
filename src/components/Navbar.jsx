@@ -34,7 +34,7 @@ const Navbar = () => {
                     <li key={id}>
                         <img
                             src={img}
-                            className="icon-hover cursor-pointer w-[40px] h-[40px] object-contain"
+                            className="icon-hover cursor-pointer"
                             alt={`icon-${id}`}
                             onClick={() => {
                                 if (img.includes('search')) {
