@@ -23,7 +23,7 @@ const Navbar = () => {
                     className={`p-1 px-2 rounded cursor-pointer transition-colors ${isAppleMenuOpen ? 'bg-blue-500 text-white' : 'hover:bg-gray-200'}`}
                     onClick={() => setIsAppleMenuOpen(!isAppleMenuOpen)}
                 >
-                    <img src="/images/apple-logo.png" alt="Apple" className="w-[18px] h-[18px] object-contain" />
+                    <img src="/images/apple-logo.png" alt="Apple" className="w-[22px] h-[22px] object-contain" />
                 </div>
                 {isAppleMenuOpen && <AppleMenu onClose={() => setIsAppleMenuOpen(false)} btnRef={appleBtnRef} />}
             </div>
