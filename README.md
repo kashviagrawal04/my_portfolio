@@ -1,6 +1,5 @@
-# Kashvi's macOS Portfolio
+# Portfolio
 
-Welcome to my interactive, macOS-themed personal portfolio!
 
 🌐 **Live Demo:** [https://my-portfolio-fawn-seven-18.vercel.app/](https://my-portfolio-fawn-seven-18.vercel.app/)
 
