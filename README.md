@@ -1,16 +1,25 @@
-# React + Vite
+# Kashvi's macOS Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my interactive, macOS-themed personal portfolio!
 
-Currently, two official plugins are available:
+🌐 **Live Demo:** [https://my-portfolio-fawn-seven-18.vercel.app/](https://my-portfolio-fawn-seven-18.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **Authentic macOS UI:** Experience a fully simulated macOS environment right in your browser, complete with draggable windows, a Dock, and a functional top bar.
+- **Interactive Apps:** Browse through my projects in the mock App Store, read about me in Notes, or explore my gallery in the Photos app.
+- **Terminal Minigame:** Think you can crack the system? Find the hidden terminal, type `sudo hack`, and solve the riddle to reveal a secret!
+- **System Interactions:** Authentic Apple Menu dropdown, working clock, simulated System Settings, and even a mock boot screen on restart.
 
-## React Compiler
+## Technologies Used
+- React
+- Vite
+- Tailwind CSS
+- Framer Motion
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Local Development
+To run this project locally:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository
+2. Run `npm install`
+3. Run `npm run dev`
+4. Open `http://localhost:5173` in your browser.
