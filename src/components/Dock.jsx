@@ -101,7 +101,10 @@ const Dock = () => {
                 src={`/images/${icon}`}
                 alt={name}
                 loading="lazy"
-                className={canOpen ? "" : "opacity-60"}
+                className={`${canOpen ? "" : "opacity-60"} ${
+                  id === 'kashvigpt' ? '!object-cover !w-[85%] !h-[85%] rounded-xl shadow-sm bg-black/10' : 
+                  id === 'launchpad' ? 'scale-[1.15]' : ''
+                }`}
               />
             </button>
           </div>

@@ -37,6 +37,24 @@ const navIcons = [
 
 const dockApps = [
     {
+        id: "kashvigpt",
+        name: "KashviGPT",
+        icon: "kashvi_gpt.png",
+        canOpen: true,
+    },
+    {
+        id: "launchpad",
+        name: "Launchpad",
+        icon: "launchpad.png",
+        canOpen: true,
+    },
+    {
+        id: "bear",
+        name: "About Me",
+        icon: "bear.png",
+        canOpen: true,
+    },
+    {
         id: "finder",
         name: "Portfolio", // was "Finder"
         icon: "finder.png",
@@ -176,19 +194,19 @@ const photosLinks = [
 const gallery = [
     {
         id: 1,
-        img: "/images/kashvi-1.jpg",
+        img: "/images/landscape1.jpg",
     },
     {
         id: 2,
-        img: "/images/kashvi-2.jpg",
+        img: "/images/landscape2.jpg",
     },
     {
         id: 3,
-        img: "/images/kashvi-3.png",
+        img: "/images/landscape3.jpg",
     },
     {
         id: 4,
-        img: "/images/kashvi-4.jpg",
+        img: "/images/landscape4.jpg",
     },
 ];
 
@@ -202,6 +220,17 @@ export {
     photosLinks,
     gallery,
 };
+
+export const apps = [
+    { id: "kashvigpt", name: "KashviGPT", icon: "/images/kashvi_gpt.png" },
+    { id: "launchpad", name: "Launchpad", icon: "/images/launchpad.png" },
+    { id: "finder", name: "Portfolio", icon: "/images/finder.png" },
+    { id: "bear", name: "About Me", icon: "/images/bear.png" },
+    { id: "safari", name: "Articles", icon: "/images/safari.png" },
+    { id: "photos", name: "Gallery", icon: "/images/photos.png" },
+    { id: "contact", name: "Contact", icon: "/images/contact.png" },
+    { id: "terminal", name: "Terminal", icon: "/images/terminal.png" },
+];
 
 const WORK_LOCATION = {
     id: 1,
@@ -418,6 +447,74 @@ const WORK_LOCATION = {
                 },
             ],
         },
+
+        // ▶ Project 7
+        {
+            id: 11,
+            name: "NOTION-AI",
+            icon: "/images/folder.png",
+            kind: "folder",
+            position: "top-[18rem] left-10",
+            windowPosition: "top-[10vh] left-[30vw]",
+            children: [
+                {
+                    id: 1,
+                    name: "About NOTION-AI.txt",
+                    icon: "/images/txt.png",
+                    kind: "file",
+                    fileType: "txt",
+                    position: "top-5 left-10",
+                    description: [
+                        "NOTION-AI is an intelligent, real-time collaborative workspace inspired by Notion.",
+                        "It integrates powerful AI features to help users generate content, summarize text, and organize their thoughts seamlessly.",
+                        "Built with modern web technologies like Next.js, Tailwind, and WebSockets for a smooth, interactive experience.",
+                    ],
+                },
+                {
+                    id: 2,
+                    name: "github.com",
+                    icon: "/images/safari.png",
+                    kind: "file",
+                    fileType: "url",
+                    href: "https://github.com/kashviagrawal04/NOTION-AI",
+                    position: "top-20 right-10",
+                },
+            ],
+        },
+
+        // ▶ Project 8
+        {
+            id: 12,
+            name: "REALTIME-CODE-EDITOR",
+            icon: "/images/folder.png",
+            kind: "folder",
+            position: "top-[18rem] left-52",
+            windowPosition: "top-[15vh] right-[30vw]",
+            children: [
+                {
+                    id: 1,
+                    name: "About CODE-EDITOR.txt",
+                    icon: "/images/txt.png",
+                    kind: "file",
+                    fileType: "txt",
+                    position: "top-5 left-10",
+                    description: [
+                        "REALTIME-CODE-EDITOR is a collaborative web-based code editor that allows multiple developers to write and debug code simultaneously.",
+                        "It features real-time synchronization, syntax highlighting, and a sleek IDE-like interface.",
+                        "Ideal for pair programming and remote interviews, ensuring instant updates across all clients.",
+                    ],
+                },
+                {
+                    id: 2,
+                    name: "github.com",
+                    icon: "/images/safari.png",
+                    kind: "file",
+                    fileType: "url",
+                    href: "https://github.com/kashviagrawal04/REALTIME-CODE-EDITOR",
+                    position: "top-20 right-10",
+                },
+            ],
+        },
     ],
 };
 
@@ -531,14 +628,22 @@ export const locations = {
 const INITIAL_Z_INDEX = 1000;
 
 const WINDOW_CONFIG = {
+    spotlight: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+    launchpad: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
     finder: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
     contact: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+    kashvigpt: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
     resume: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
     safari: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+    bear: { isOpen: true, zIndex: INITIAL_Z_INDEX + 1, data: null },
     photos: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
     terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
     txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
     imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+    about: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+    settings: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+    appstore: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+    forcequit: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
 };
 
 export { INITIAL_Z_INDEX, WINDOW_CONFIG };

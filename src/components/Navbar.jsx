@@ -1,37 +1,53 @@
-import React from "react";
-// if you don't have path alias, use: import { navLinks } from "../constants";
-import { navLinks,navIcons} from "#constants/index.js";
+import React, { useState, useEffect, useRef } from "react";
 import dayjs from "dayjs";
-const Navbar = () => {
-    return (
-        <nav>
-            <div>
-                <img src="/images/logo.svg" alt="logo" />
-                <p className="font-bold">Kashvi's Portfolio</p>
+import { navLinks, navIcons } from "#constants/index.js";
+import { useWindowContext } from "#context/WindowContext.jsx";
+import { AppleMenu } from "#components/index.js";
 
-                <ul>
-                    {navLinks.map(({ id, name }) => (
-                        <li key={id}>
-                            <p>{name}</p>
-                        </li>
-                    ))}
-                </ul>
+const Navbar = () => {
+    const [time, setTime] = useState(new Date());
+    const [isAppleMenuOpen, setIsAppleMenuOpen] = useState(false);
+    const { openWindow } = useWindowContext();
+    const appleBtnRef = useRef(null);
+
+    useEffect(() => {
+        const interval = setInterval(() => setTime(new Date()), 1000);
+        return () => clearInterval(interval);
+    }, []);
+
+    return (
+        <nav className="fixed top-0 w-full z-[9990] flex justify-between items-center bg-white/50 backdrop-blur-3xl p-1 px-5 select-none text-sm font-medium">
+            <div className="flex items-center gap-5">
+                <div 
+                    ref={appleBtnRef}
+                    className={`p-1 px-2 rounded cursor-pointer transition-colors ${isAppleMenuOpen ? 'bg-blue-500 text-white' : 'hover:bg-gray-200'}`}
+                    onClick={() => setIsAppleMenuOpen(!isAppleMenuOpen)}
+                >
+                    <img src="/images/apple-logo.png" alt="Apple" className="w-[18px] h-[18px] object-contain" />
+                </div>
+                {isAppleMenuOpen && <AppleMenu onClose={() => setIsAppleMenuOpen(false)} btnRef={appleBtnRef} />}
             </div>
+            
             <div>
-            <ul>
+            <ul className="flex items-center gap-4">
                 {navIcons.map(({ id, img }) => (
                     <li key={id}>
                         <img
                             src={img}
-                            className="icon-hover"
+                            className="icon-hover cursor-pointer"
                             alt={`icon-${id}`}
+                            onClick={() => {
+                                if (img.includes('search')) {
+                                    openWindow('spotlight');
+                                }
+                            }}
                         />
                     </li>
                 ))}
             </ul>
             </div>
-            <time>
-                    {dayjs().format("ddd MMM D h:mm A")}
+            <time className="mr-2">
+                    {dayjs(time).format("ddd MMM D h:mm A")}
             </time>
         </nav>
     );

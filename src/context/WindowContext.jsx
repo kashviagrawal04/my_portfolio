@@ -6,6 +6,10 @@ const WindowContext = createContext();
 export const WindowProvider = ({ children }) => {
     const [windows, setWindows] = useState(WINDOW_CONFIG);
     const [highestZIndex, setHighestZIndex] = useState(INITIAL_Z_INDEX);
+    const [isLocked, setIsLocked] = useState(true);
+    const [isHacked, setIsHacked] = useState(false);
+    const [isBooting, setIsBooting] = useState(false);
+    const [isSleeping, setIsSleeping] = useState(false);
 
     const openWindow = (appId) => {
         setHighestZIndex((prev) => prev + 1);
@@ -44,7 +48,7 @@ export const WindowProvider = ({ children }) => {
 
     return (
         <WindowContext.Provider
-            value={{ windows, openWindow, closeWindow, bringToFront }}
+            value={{ windows, openWindow, closeWindow, bringToFront, isLocked, setIsLocked, isHacked, setIsHacked, isBooting, setIsBooting, isSleeping, setIsSleeping }}
         >
             {children}
         </WindowContext.Provider>

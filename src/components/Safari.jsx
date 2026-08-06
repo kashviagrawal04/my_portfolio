@@ -24,7 +24,7 @@ const Safari = () => {
             </div>
 
             {/* Content */}
-            <div className="h-[500px] overflow-y-auto bg-white">
+            <div className="h-full overflow-y-auto bg-white">
                 <div className="blog">
                     <h2>Latest Articles</h2>
                     

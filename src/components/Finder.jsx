@@ -16,7 +16,7 @@ const Finder = () => {
 
     return (
         <Window appId="finder">
-            <div className="flex h-[500px]">
+            <div className="flex h-full">
                 {/* Sidebar */}
                 <div className="sidebar">
                     <h3>Favorites</h3>

@@ -41,7 +41,7 @@ body {
     nav {
         @apply flex justify-between items-center bg-white/50 backdrop-blur-3xl p-2 px-5 select-none;
 
-        div {
+        > div {
             @apply flex items-center max-sm:w-full max-sm:justify-center gap-5;
 
             &:last-child {
@@ -92,10 +92,10 @@ body {
         }
 
         .dock-icon {
-            @apply size-14 3xl:size-20 cursor-pointer;
+            @apply size-14 3xl:size-20 cursor-pointer flex items-center justify-center relative;
 
             img {
-                @apply object-cover object-center;
+                @apply w-full h-full object-contain object-center;
             }
         }
     }
@@ -120,9 +120,7 @@ body {
         @apply flex items-center justify-between px-4 py-3 rounded-t-lg bg-gray-50 border-b border-gray-200 select-none text-sm text-gray-400;
     }
 
-    #safari {
-        @apply w-4xl absolute top-40 left-2/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
-
+    #window-safari {
         .search {
             @apply flex items-center gap-3 w-2/3 bg-white border border-gray-300 rounded-lg px-3 py-2;
 
@@ -164,9 +162,7 @@ body {
         }
     }
 
-    #terminal {
-        @apply w-xl absolute top-32 left-1/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
-
+    #window-terminal {
         h2 {
             @apply font-bold text-sm text-center w-full;
         }
@@ -210,9 +206,7 @@ body {
         }
     }
 
-    #contact {
-        @apply max-w-2xl absolute top-60 left-5/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
-
+    #window-contact {
         h2 {
             @apply font-bold text-sm text-center w-full;
         }
@@ -238,9 +232,7 @@ body {
         }
     }
 
-    #photos {
-        @apply max-w-3xl absolute top-96 left-1/2 -translate-y-1/2 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
-
+    #window-photos {
         .sidebar {
             @apply w-3/12 flex-none bg-gray-50 border-r border-gray-200 flex flex-col p-5;
 
@@ -298,8 +290,8 @@ body {
         }
     }
 
-    #resume {
-        @apply w-fit h-fit absolute top-16 left-7/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+    #window-resume {
+        @apply flex flex-col h-full w-full;
 
         #window-header {
             h2 {
@@ -308,9 +300,7 @@ body {
         }
     }
 
-    #finder {
-        @apply absolute w-3xl left-40 top-20 shadow-2xl drop-shadow-2xl overflow-hidden rounded-xl;
-
+    #window-finder {
         .sidebar {
             @apply w-48 bg-gray-50 border-r border-gray-200 flex flex-col p-5 space-y-3;
 
@@ -356,17 +346,13 @@ body {
         }
     }
 
-    #txtfile {
-        @apply w-md absolute top-36 right-32 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
-
+    #window-txtfile {
         h2 {
             @apply font-bold text-sm text-center w-full;
         }
     }
 
-    #imgfile {
-        @apply w-xl absolute top-40 left-2/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
-
+    #window-imgfile {
         #window-header {
             p {
                 @apply font-bold text-[#5f6266];
