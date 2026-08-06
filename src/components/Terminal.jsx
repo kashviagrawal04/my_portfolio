@@ -35,9 +35,21 @@ const Terminal = () => {
             setInput("");
             return;
         } else if (cmd === "ls" || cmd === "help") {
-            newEntry.output = "Available commands: clear, help, ls, sudo hack";
+            newEntry.output = "Available commands: clear, help, ls, whoami, pwd, date, sudo hack, sudo hire kashvi, cat resume.txt, ls projects";
         } else if (cmd === "cat skills.json") {
             newEntry.output = "Skills are already displayed above.";
+        } else if (cmd === "whoami") {
+            newEntry.output = "guest (visitor)";
+        } else if (cmd === "pwd") {
+            newEntry.output = "/Users/kashvi/portfolio";
+        } else if (cmd === "date") {
+            newEntry.output = new Date().toString();
+        } else if (cmd === "sudo hire kashvi") {
+            newEntry.output = "Access Granted! 🚀 Please send the offer letter to kashviagrawal4@gmail.com.";
+        } else if (cmd === "cat resume.txt") {
+            newEntry.output = "Kashvi Agrawal\n\nEducation:\n- B.Tech CSE (Data Science), Vellore Institute of Technology (2022-2026)\n\nSummary:\nPassionate about Data Science, Machine Learning, and building intelligent systems.\n\nType 'ls projects' to see what I've built!";
+        } else if (cmd === "ls projects") {
+            newEntry.output = "1. Food Allergen Detection System (PyTorch, ViT, React)\n2. Marvin - AI Women Safety App (Java, Android, TFLite)\n3. PathSense (IoT, Ultrasonic sensors)\n\nOpen the 'App Store' or 'Projects' tab in About Me for more info.";
         } else {
             newEntry.output = `zsh: command not found: ${input}`;
         }
