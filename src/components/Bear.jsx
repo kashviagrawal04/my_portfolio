@@ -180,7 +180,7 @@ const Bear = () => {
                                 </svg>
                                 <span className="font-bold text-sm text-gray-900">About Me</span>
                             </div>
-                            <p className="text-xs text-gray-500 ml-7 line-clamp-2">Hey there! I'm the one who is building his own universe...</p>
+                            <p className="text-xs text-gray-500 ml-7 line-clamp-2">Hey there! I'm the one who is building her own universe...</p>
                         </li>
 
                         <li 
