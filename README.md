@@ -1,8 +1,5 @@
 # Portfolio
 
-
-🌐 **Live Demo:** [https://my-portfolio-fawn-seven-18.vercel.app/](https://my-portfolio-fawn-seven-18.vercel.app/)
-
 ## Features
 - **Authentic macOS UI:** Experience a fully simulated macOS environment right in your browser, complete with draggable windows, a Dock, and a functional top bar.
 - **Interactive Apps:** Browse through my projects in the mock App Store, read about me in Notes, or explore my gallery in the Photos app.
